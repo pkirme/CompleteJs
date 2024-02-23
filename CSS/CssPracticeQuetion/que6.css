@@ -1,0 +1,38 @@
+
+ul{
+    background-color: rgb(160, 98, 98);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    list-style-type: none;
+}
+li:hover{
+    border: 2px solid white;
+}
+.outer{
+    height:300px;
+    width:300px;
+    background-color:crimson;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap;  */
+    align-items: center;
+    
+}
+.inner{
+    height: 100px;
+    width:100px;
+    background-color: aqua;
+    /* align-self: flex-end; */
+}

@@ -1,0 +1,16 @@
+p {
+  text-align: left;
+  /* text-align: right;
+    text-align: center;
+    text-align: justify;
+    text-align: start;
+    text-align: end; */
+  text-decoration: underline;
+  font-family: cursive;
+}
+h1 {
+  text-align: center;
+  text-decoration: red underline double;
+  font-weight: lighter;
+  font-family: Arial;
+}

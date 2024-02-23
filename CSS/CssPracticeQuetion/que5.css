@@ -1,0 +1,9 @@
+div {
+  position: fixed;
+  right: 0;
+  height: 300px;
+  width: 500px;
+  background-color: rgb(15, 134, 34);
+  background-image: url("nature.jpg");
+  background-size: cover;
+}
