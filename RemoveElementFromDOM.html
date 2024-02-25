@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Element From DOM</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    //Create
+    //all element get travelled
+    const addLanguage = (langName) => {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    };
+    addLanguage("c++");
+    addLanguage("Python");
+
+    //Create element in optimized way by using createTextNode
+    const addLangInOptimizedWay = (langName) => {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(`${langName}`));
+      document.querySelector(".language").appendChild(li);
+    };
+    addLanguage("Java");
+    addLanguage(".Net");
+
+    //Edit Element
+    const replaceLang = document.querySelector("li:nth-child(2)");
+    // replaceLang.innerHTML="HTML";
+    //Optimize way
+    const newLi = document.createElement("li");
+    newLi.textContent = "Mojo";
+    replaceLang.replaceWith(newLi);
+
+    const replaceFirst = document.querySelector("li:first-child");
+    replaceFirst.outerHTML = "<li>TypeScript</li>";
+
+    // Delete Element
+    const lastEle = document.querySelector("li:last-child");
+    lastEle.remove();
+  </script>
+</html>
